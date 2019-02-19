@@ -36,5 +36,6 @@
 			<db:parameterized-query><![CDATA[select * from flights]]></db:parameterized-query>
 		</db:select>
 		<json:object-to-json-transformer doc:name="Object to JSON" />
+		<set-property value="application/json" propertyName="Content-Type" doc:name="Property" />
 	</flow>
 </mule>
