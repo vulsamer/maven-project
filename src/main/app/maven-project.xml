@@ -30,7 +30,7 @@
 	</flow>
 
 
-	<flow name="retrieveFlieghts">
+	<flow name="retrieveFlights">
 		<http:listener config-ref="HTTP_Listener_Configuration" path="/flights" doc:name="HTTP" />
 		<db:select config-ref="Derby_Configuration" doc:name="Database">
 			<db:parameterized-query><![CDATA[select * from flights]]></db:parameterized-query>
